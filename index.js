@@ -4,8 +4,8 @@ import dotenv from'dotenv';
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT;
-let text=`Hi Welcome to Port ${PORT}`;
 let date = Date();
+let text=`Hi Welcome to Port ${PORT} and ${date}`;
 fs.writeFile("current-data-time.txt",date,(err)=> {
     console.log("Completed writing!")
 })
