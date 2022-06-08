@@ -2,7 +2,7 @@ import express from 'express';
 import * as fs from 'node:fs';
 const app = express();
 const PORT = process.env.PORT;
-let text='Hi Welcome to Port 4100';
+let text=`Hi Welcome to Port ${PORT}`;
 let date = Date();
 let result=fs.writeFile("current-data-time.txt",date,(err)=> {
     console.log("Completed writing!")
